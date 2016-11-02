@@ -50,7 +50,7 @@ Let's take a look at the code in `lib/custom_attr.rb`
 
 ## Lab: Making a Class Method
 
--   Make a class method on Album to search the collection of albums by `title`.
+-   Make a class method on Album (in `lib/album.rb`) to search the collection of albums by `title`.
 -   Use this class method to set YOUR favorite Album by searching for the album
 title.
 -   Create a instance method on songs to add a `Rating` to Songs.
