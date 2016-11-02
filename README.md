@@ -2,6 +2,10 @@
 
 # Ruby Class Methods
 
+## Prerequisites
+
+-   [ruby-objects-self](https://github.com/ga-wdi-boston/ruby-objects-self)
+
 ## Objectives
 
 By the end of this, students should be able to:
@@ -10,6 +14,14 @@ By the end of this, students should be able to:
 -   Diagram the invocation pattern between `#initialize` and `.new`.
 -   Contrast defining class methods with defining instance methods.
 -   Contrast invoking class methods with invoking instance methods.
+
+## Preparation
+
+1.  Fork and clone this repository.
+ [FAQ](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
+1.  Create a new branch, `training`, for your work.
+1.  Checkout to the `training` branch.
+1.  Install dependencies with `bundle install`.
 
 ## Class Methods
 
