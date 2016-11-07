@@ -30,6 +30,10 @@ Sometimes a method is associated with a class, not an object.
 Observe how a Method on a **Class** differs from a method on an **Instance**
 that Class.
 
+<!-- Diagram the difference between #initialize and ::new
+ See issue #10
+-->
+
 Let's discuss the code below:
 
 ```ruby
