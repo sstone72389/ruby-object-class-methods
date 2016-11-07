@@ -23,7 +23,7 @@ By the end of this, students should be able to:
 1.  Checkout to the `training` branch.
 1.  Install dependencies with `bundle install`.
 
-## Class Methods
+## Demo: Class Methods
 
 Sometimes a method is associated with a class, not an object.
 
@@ -33,22 +33,29 @@ that Class.
 Let's discuss the code below:
 
 ```ruby
-class FullCat
-  def self.mouse
-    puts "I'm in the cats stomach"
+class Cat
+  @@cats_count = 0
+
+  def initialize(name)
+    @name = name
+    @@cats_count += 1
   end
 
-  def escape_mouse
-    puts 'I escaped the cat'
+  def self.cats_count
+    @@cats_count
+  end
+
+  def meow
+    puts "Meow"
   end
 end
 ```
 
-## Demonstration
+## Demo: Analyze class methods
 
 Let's take a look at the code in `lib/custom_attr.rb`
 
-## Lab: Making a Class Method
+## Lab: Make a Class Method
 
 -   Make a class method on Album (in `lib/album.rb`) to search the collection of albums by `title`.
 -   Use this class method to set YOUR favorite Album by searching for the album

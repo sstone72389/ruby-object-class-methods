@@ -10,6 +10,10 @@ class Cat
   def self.cats_count
     @@cats_count
   end
+
+  def meow
+    puts "#{@name} meows"
+  end
 end
 
 # kitty = Cat.new("Mr.Kitty");
