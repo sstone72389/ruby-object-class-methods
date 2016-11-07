@@ -53,7 +53,14 @@ class Cat
     puts "Meow"
   end
 end
+
+zeno = Cat.new('Zeno')
 ```
+
+We know that there is a class Cat, and the `::new` method is recieved by the Cat class, with 'Zeno' as an argument. It then calls the instance method `#initialize` with 'Zeno' as an argument, which assigns 'Zeno' to an instance variable, `@name`.
+
+Where will the method `cats_count` be recieved?
+What about `meow`?
 
 ## Demo: Analyze class methods
 
