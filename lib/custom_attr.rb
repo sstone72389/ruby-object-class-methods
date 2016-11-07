@@ -1,4 +1,4 @@
-# Dumb linter wants a comment
+# Class with class methods
 class Bar
   # we have to define this method on `self` (see below comment)
   def self.attribute_reader(attribute)
