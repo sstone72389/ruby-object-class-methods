@@ -34,20 +34,16 @@ that Class.
  See issue #10
 -->
 
-Let's discuss the code below:
+Let's discuss the code below in [`lib/pet.rb`](lib/pet.rb)
 
-```ruby
-class Cat
-  @@cats_count = 0
+In the Animal class, and the `::new` method is recieved by the Animal class, with 'Zeno' and 'cat' as an arguments. It then calls the instance method `#initialize` with 'Zeno' and 'cat' as an arguments, which assigns 'Zeno' to an instance variable, `@name` and 'cat' to the instance variable `@species`.
 
-  def initialize(name)
-    @name = name
-    @@cats_count += 1
-  end
+The Pet class is different.  The Pet class is used here to give us meta-data
+about a list of Pets. When we get to Rails, this data will be information we
+get back from the database.
 
-  def self.cats_count
-    @@cats_count
-  end
+Where will the method `dog_count` be recieved?
+What about `all`?
 
   def meow
     puts "Meow"
