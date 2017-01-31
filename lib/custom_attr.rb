@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Class with class methods
 class Bar
   # we have to define this method on `self` (see below comment)

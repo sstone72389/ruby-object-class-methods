@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Cat class
 class Cat
   @@cats_count = 0
