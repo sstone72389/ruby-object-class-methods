@@ -62,10 +62,6 @@ We know that there is a class Cat, and the `::new` method is recieved by the Cat
 Where will the method `cats_count` be recieved?
 What about `meow`?
 
-## Demo: Analyze class methods
-
-Let's take a look at the code in `lib/custom_attr.rb`
-
 ## Lab: Make a Class Method
 
 -   Make a class method on Album (in `lib/album.rb`) to search the collection of albums by `title`.
