@@ -45,25 +45,18 @@ get back from the database.
 Where will the method `dog_count` be recieved?
 What about `all`?
 
-  def meow
-    puts "Meow"
-  end
-end
-
-zeno = Cat.new('Zeno')
-```
-
-We know that there is a class Cat, and the `::new` method is recieved by the Cat class, with 'Zeno' as an argument. It then calls the instance method `#initialize` with 'Zeno' as an argument, which assigns 'Zeno' to an instance variable, `@name`.
-
-Where will the method `cats_count` be recieved?
-What about `meow`?
-
 ## Lab: Make a Class Method
 
--   Make a class method on Album (in `lib/album.rb`) to search the collection of albums by `title`.
--   Use this class method to set YOUR favorite Album by searching for the album
-title.
--   Create a instance method on songs to add a `Rating` to Songs.
+-   Make a class method, `search` on Album (in `lib/album.rb`) to search the
+    collection of songs by `title`.
+-   Make a class method `count` that returns the total number of songs on the album.
+-   Use `bin/rake test` to test your work
+
+Bonus:
+-   Make your search be insensitive to case ('Formation' and 'formation' return
+    the same song)
+-   Make the search look for part of a word ('ation' also returns the song
+    'Formation')
 
 ## [License](LICENSE)
 
