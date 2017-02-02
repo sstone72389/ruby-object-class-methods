@@ -34,44 +34,29 @@ that Class.
  See issue #10
 -->
 
-Let's discuss the code below:
+Let's discuss the code below in [`lib/pet.rb`](lib/pet.rb)
 
-```ruby
-class Cat
-  @@cats_count = 0
+In the Animal class, and the `::new` method is recieved by the Animal class, with 'Zeno' and 'cat' as an arguments. It then calls the instance method `#initialize` with 'Zeno' and 'cat' as an arguments, which assigns 'Zeno' to an instance variable, `@name` and 'cat' to the instance variable `@species`.
 
-  def initialize(name)
-    @name = name
-    @@cats_count += 1
-  end
+The Pet class is different.  The Pet class is used here to give us meta-data
+about a list of Pets. When we get to Rails, this data will be information we
+get back from the database.
 
-  def self.cats_count
-    @@cats_count
-  end
-
-  def meow
-    puts "Meow"
-  end
-end
-
-zeno = Cat.new('Zeno')
-```
-
-We know that there is a class Cat, and the `::new` method is recieved by the Cat class, with 'Zeno' as an argument. It then calls the instance method `#initialize` with 'Zeno' as an argument, which assigns 'Zeno' to an instance variable, `@name`.
-
-Where will the method `cats_count` be recieved?
-What about `meow`?
-
-## Demo: Analyze class methods
-
-Let's take a look at the code in `lib/custom_attr.rb`
+Where will the method `dog_count` be recieved?
+What about `all`?
 
 ## Lab: Make a Class Method
 
--   Make a class method on Album (in `lib/album.rb`) to search the collection of albums by `title`.
--   Use this class method to set YOUR favorite Album by searching for the album
-title.
--   Create a instance method on songs to add a `Rating` to Songs.
+-   Make a class method, `search` on Album (in `lib/album.rb`) to search the
+    collection of songs by `title`.
+-   Make a class method `count` that returns the total number of songs on the album.
+-   Use `bin/rake test` to test your work
+
+Bonus:
+-   Make your search be insensitive to case ('Formation' and 'formation' return
+    the same song)
+-   Make the search look for part of a word ('ation' also returns the song
+    'Formation')
 
 ## [License](LICENSE)
 
