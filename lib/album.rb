@@ -15,4 +15,13 @@ class Album
             Song.new(title: 'Sandcastles'),
             Song.new(title: 'Freedom'),
             Song.new(title: 'Formation')].map(&:freeze)
+
+  def self.search(title)
+    index = TRACKS.index { |track| track.title == title }
+    TRACKS[index]
+  end
+
+  def self.count
+    TRACKS.count
+  end
 end
