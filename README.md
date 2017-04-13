@@ -8,7 +8,7 @@
 
 ## Objectives
 
-By the end of this, students should be able to:
+By the end of this, developers should be able to:
 
 -   Give an example of a class method you already use.
 -   Diagram the invocation pattern between `#initialize` and `.new`.
